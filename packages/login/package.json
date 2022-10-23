@@ -14,7 +14,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/login.test.js",
+    "test": "ts-node --esm ./__tests__/login.test.ts",
     "dev": "tsc"
-  }
+  },
+  "type": "module"
 }
