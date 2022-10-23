@@ -1,11 +1,11 @@
 {
-  "name": "@my-project/service-auth",
+  "name": "@my-project/server",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "billy le <lebilly87@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/service-auth.js",
+  "main": "lib/server.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,7 +14,11 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/service-auth.test.js",
-    "dev": "tsc"
-  }
+    "test": "ts-node --esm ./__tests__/server.test.ts",
+    "dev": "nodemon ./lib/server.ts"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "type": "module"
 }
