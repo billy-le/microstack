@@ -1,0 +1,20 @@
+{
+  "name": "@my-project/login",
+  "version": "0.0.0",
+  "description": "login page",
+  "author": "billy le <lebilly87@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/login.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/login.test.js",
+    "dev": "tsc"
+  }
+}
